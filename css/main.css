@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63% );
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--med-Dark-Blue: hsl(216, 12%, 54%);
+--font-family: 'Overpass' ,sans-serif;
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+  /*  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+.container img{
+    width: 35px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: hsl(213, 20%, 22%);
+    
+}
+.container ,.thank {
+   max-width: 400px;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+    border-radius: .6rem;
+    gap:0.9rem;
+    
+}
+.head{
+    color: var(--White);
+}
+.content{
+    color: var(--Light-Grey);
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+li button{
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: hsl(213, 20%, 22%);
+    outline: 0;
+    border: none;
+    color: var(--Light-Grey);
+    height: 3rem;
+    width: 3rem;
+
+}
+li button:hover{
+   color: black;
+    background-color: var(--White);
+}
+.btn-submit{
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+.btn-submit:hover{
+    background-color:var(--White);
+    cursor: pointer;
+}
+.thank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.thank .images{
+    width: 50%;
+}
+.thank .headtop{
+    color: var(--Orange);
+    border:1px solidhsl(213, 20%, 22%);
+    background-color: hsl(213, 20%, 22%);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.thank .content{
+    font-size: 15px;
+    text-align: center;
+}
+.checked {
+    background-color: var(--Orange) !important;
+    color: var(--White) !important;
+  }
+  .hidden{
+     display: none;
+  }
+  
